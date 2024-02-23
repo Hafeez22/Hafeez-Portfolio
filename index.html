@@ -34,15 +34,15 @@
     <link rel="stylesheet" href="style.css" />
     <script>
      function blink_text(){
-      $('.blink').fadeOut(150);
+      $('.blink').fadeOut(150).css('color:black');
       $('.blink').fadeIn(150);
      }
      setInterval(blink_text, 1000);
      $(document).ready(function(){
      $(".resume").hover(function(){
-     $(this).html("<h5 style='color:black'><i class='fa-solid fa-file'></i> Do it download me</h5>");
+     $(this).html("<a href='Resume_hafeez_new.pdf' id='active' target='_blank' class='text-decoration-none lead' style='color: white;' rel='noopener noreferrer'><h5 style='color:black' class='resume'><i class='fa-solid fa-file'></i> Come on download me..! </h5></a>");
      }, function(){
-        $(this).html("<h6><i class='fa-solid fa-file'></i> Download Resume </h6>");
+        $(this).html("<a href='Resume_hafeez_new.pdf' id='active' target='_blank' class='text-decoration-none lead' style='color: white;' rel='noopener noreferrer'><h6 class='resume'><i class='fa-solid fa-file'></i> Download Resume </h6></a>");
      });
      });
     </script>
